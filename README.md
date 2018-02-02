@@ -1,2 +1,5 @@
 # YFLiveTV
 基于swift的直播推流应用.
+1. Alamofire.AFNetworking的作者Matt Thompson 提出了一个新的类似AFNetworking的网络基础库,并且专门使用最新的Swift语言写的,名为 Alamofire.
+2.SnapKit..Swift之后，虽然其语言特性能够支持OC的混编，但依然让人觉得很麻烦. Masonry使用开发者众多，而其原作者也在众多开发者要求支持Swift版本呼声中推出了SnapKit. 和Masonry一样，SnapKit是一套轻量级的布局框架，同样适用链式语法封装Apple的自动布局约束. 项目发布至今大约一年多的时间，已经在github上有六千多个Star，当然了，这其中也少不了利用Masonry影响力给他打的那些广告。
+3.直播用的是IJKMediaFramework.framework.GitHub没有上传.

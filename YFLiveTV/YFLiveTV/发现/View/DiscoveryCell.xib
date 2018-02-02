@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="DiscoveryCell" customModule="YFLiveTV" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="195" height="195"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="195" height="195"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="52T-KV-ih8">
+                        <rect key="frame" x="0.0" y="0.0" width="195" height="195"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_icon_live" translatesAutoresizingMaskIntoConstraints="NO" id="wx0-9R-HTe">
+                        <rect key="frame" x="144" y="13" width="31" height="31"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="31" id="Fwa-vy-J7u"/>
+                            <constraint firstAttribute="height" constant="31" id="Xkn-Sn-q2B"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aG4-SB-QVl">
+                        <rect key="frame" x="11" y="152" width="80" height="23"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="23" id="M2a-t3-jwA"/>
+                            <constraint firstAttribute="width" constant="80" id="Puw-rw-NS5"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zyQ-Ky-z31">
+                        <rect key="frame" x="111" y="152" width="33" height="23"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <state key="normal" title="Button">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="52T-KV-ih8" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="4Ed-h5-qGm"/>
+                <constraint firstItem="aG4-SB-QVl" firstAttribute="bottom" secondItem="zyQ-Ky-z31" secondAttribute="bottom" id="8Un-um-ZMz"/>
+                <constraint firstAttribute="trailing" secondItem="wx0-9R-HTe" secondAttribute="trailing" constant="20" id="OId-eh-svJ"/>
+                <constraint firstItem="zyQ-Ky-z31" firstAttribute="leading" secondItem="aG4-SB-QVl" secondAttribute="trailing" constant="20" id="Wc9-6w-mT2"/>
+                <constraint firstItem="aG4-SB-QVl" firstAttribute="top" secondItem="zyQ-Ky-z31" secondAttribute="top" id="bwj-zH-Y98"/>
+                <constraint firstAttribute="bottom" secondItem="52T-KV-ih8" secondAttribute="bottom" id="czc-E9-MTA"/>
+                <constraint firstAttribute="bottom" secondItem="aG4-SB-QVl" secondAttribute="bottom" constant="20" id="d9B-Ex-p6k"/>
+                <constraint firstItem="52T-KV-ih8" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="hHU-kC-VBZ"/>
+                <constraint firstAttribute="trailing" secondItem="52T-KV-ih8" secondAttribute="trailing" id="iOO-tv-tRu"/>
+                <constraint firstItem="wx0-9R-HTe" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="13" id="rtW-3o-McH"/>
+                <constraint firstItem="aG4-SB-QVl" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="11" id="zSm-Cl-Wir"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="195" height="195"/>
+            <connections>
+                <outlet property="albumImageView" destination="52T-KV-ih8" id="zM5-sf-RCb"/>
+                <outlet property="countBtn" destination="zyQ-Ky-z31" id="S7T-D7-j8x"/>
+                <outlet property="liveImageView" destination="wx0-9R-HTe" id="Ue0-CW-MjG"/>
+                <outlet property="nameLabel" destination="aG4-SB-QVl" id="TGb-tf-q0S"/>
+            </connections>
+            <point key="canvasLocation" x="126.5" y="3.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="home_icon_live" width="23" height="13"/>
+    </resources>
+</document>

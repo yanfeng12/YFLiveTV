@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RomeViewViewController" customModule="YFLiveTV" customModuleProvider="target">
+            <connections>
+                <outlet property="bgImageViews" destination="8lS-4t-1R3" id="t89-ry-9RA"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8lS-4t-1R3">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="568"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pcC-7a-AWv">
+                    <rect key="frame" x="321" y="34" width="38" height="38"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="38" id="IOT-zO-8nz"/>
+                        <constraint firstAttribute="height" constant="38" id="JMa-RU-I6K"/>
+                    </constraints>
+                    <state key="normal" image="menu_btn_close"/>
+                    <connections>
+                        <action selector="BackBtnClick:" destination="-1" eventType="touchUpInside" id="WSm-V0-cz6"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eDP-wU-5S2">
+                    <rect key="frame" x="229" y="34" width="38" height="38"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="38" id="56y-7R-de7"/>
+                        <constraint firstAttribute="width" constant="38" id="HKD-sA-fDo"/>
+                    </constraints>
+                    <state key="normal" image="zhibo_btn_people"/>
+                </button>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="C3Y-IL-nLd">
+                    <rect key="frame" x="0.0" y="524" width="375" height="44"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="odz-d3-DdZ">
+                            <rect key="frame" x="0.0" y="0.0" width="75" height="44"/>
+                            <state key="normal" image="room_btn_chat"/>
+                            <connections>
+                                <action selector="StackBtnClick:" destination="-1" eventType="touchUpInside" id="daN-fy-fgH"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s0E-jH-2DE">
+                            <rect key="frame" x="75" y="0.0" width="75" height="44"/>
+                            <state key="normal" image="menu_btn_share"/>
+                            <connections>
+                                <action selector="StackBtnClick:" destination="-1" eventType="touchUpInside" id="AK4-bH-41E"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aXS-Jo-BwV">
+                            <rect key="frame" x="150" y="0.0" width="75" height="44"/>
+                            <state key="normal" image="room_btn_gift"/>
+                            <connections>
+                                <action selector="StackBtnClick:" destination="-1" eventType="touchUpInside" id="JQu-rk-3zJ"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="3" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qIj-LY-hPh">
+                            <rect key="frame" x="225" y="0.0" width="75" height="44"/>
+                            <state key="normal" image="room_btn_more"/>
+                            <connections>
+                                <action selector="StackBtnClick:" destination="-1" eventType="touchUpInside" id="P3x-En-GcG"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="obs-Mb-YiO">
+                            <rect key="frame" x="300" y="0.0" width="75" height="44"/>
+                            <state key="normal" image="room_btn_qfstar"/>
+                            <connections>
+                                <action selector="StackBtnClick:" destination="-1" eventType="touchUpInside" id="F5F-My-eT8"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="JEt-Tb-sB3"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="8lS-4t-1R3" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="2Lg-Nv-Zqk"/>
+                <constraint firstItem="8lS-4t-1R3" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="6qQ-ey-6SU"/>
+                <constraint firstItem="eDP-wU-5S2" firstAttribute="top" secondItem="pcC-7a-AWv" secondAttribute="top" id="7MN-38-gPd"/>
+                <constraint firstItem="C3Y-IL-nLd" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Mde-kv-1S5"/>
+                <constraint firstItem="C3Y-IL-nLd" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="O4Z-Uc-hFg"/>
+                <constraint firstItem="8lS-4t-1R3" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="UnI-AP-EHO"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="pcC-7a-AWv" secondAttribute="trailing" constant="16" id="YGr-Kc-MZn"/>
+                <constraint firstItem="eDP-wU-5S2" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="229" id="c67-Aw-WXL"/>
+                <constraint firstItem="C3Y-IL-nLd" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="fWI-Aq-KT2"/>
+                <constraint firstItem="8lS-4t-1R3" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="kFf-sc-dJi"/>
+                <constraint firstItem="pcC-7a-AWv" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="14" id="vyC-ZB-KOt"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="81.5" y="85"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="menu_btn_close" width="16" height="16"/>
+        <image name="menu_btn_share" width="25" height="25"/>
+        <image name="room_btn_chat" width="23" height="23"/>
+        <image name="room_btn_gift" width="23" height="24"/>
+        <image name="room_btn_more" width="23" height="23"/>
+        <image name="room_btn_qfstar" width="23" height="23"/>
+        <image name="zhibo_btn_people" width="20" height="16"/>
+    </resources>
+</document>

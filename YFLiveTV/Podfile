@@ -1,0 +1,6 @@
+use_frameworks!
+target ‘YFLiveTV’ do
+pod 'Alamofire'
+pod 'Kingfisher'
+pod 'SnapKit'
+end
